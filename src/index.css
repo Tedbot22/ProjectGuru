@@ -28,7 +28,6 @@ html{
 }
 body{
     margin: 0px;
-    overflow-x: hidden;
 }
 .reveal {
   opacity: 0;
