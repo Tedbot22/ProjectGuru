@@ -1,10 +1,10 @@
 function Services(){
-  const ourServices = [{id:"1", icon:"🏠", service: "Project Report", description: "This decription placeholder this tghisiisohdfkh uigsihvflih iuhd f"},
-                        {id:"2", icon:"📕", service: "Seminars Report", description: "This decription placeholder"},
-                        {id:"3", icon:"📖", service: "IT and Internship Report", description: "This decription placeholder"},
-                        {id:"4", icon:"🖊️", service: "Defence ppt slides", description: "This decription placeholder"},
-                        {id:"5", icon:"🏫", service: "Plagarism check", description: "This decription placeholder"},
-                        {id:"6", icon:"🗣️", service: "Grammar check", description: "This decription placeholder"},
+  const ourServices = [{id:"1", icon:"📋", service: "Project Report", description: "This decription placeholder this tghisiisohdfkh uigsihvflih iuhd f"},
+                        {id:"2", icon:"📝", service: "Seminars Report", description: "This decription placeholder"},
+                        {id:"3", icon:"📊", service: "IT and Internship Report", description: "This decription placeholder"},
+                        {id:"4", icon:"📑", service: "Defence ppt slides", description: "This decription placeholder"},
+                        {id:"5", icon:"📄", service: "Plagarism check", description: "This decription placeholder"},
+                        {id:"6", icon:"📄", service: "Grammar check", description: "This decription placeholder"},
   ]
   return(
     <>

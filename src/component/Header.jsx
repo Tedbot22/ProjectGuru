@@ -38,7 +38,7 @@ function Header(props){
         <header className={`header ${scrolled ? "scrolled" : ""}`}>
             <nav className="navbar">
                 <div className="nav-logo" href="#home" onClick={() => {handleActive("home"); document.getElementById("home")?.scrollIntoView({behavior: "smooth"})}}>
-                    <img src={Logo} alt="logo" style={{width: "25px", height: "25px", borderRadius: "20px"}} />
+                    <img src={Logo} alt="logo" style={{width: "25px", height: "25px", objectFit: "cover"}} />
                     <h3 className="logo-title"><a style={{textDecoration: "none"}}>Project<span style={{color: "#03A9F5"}}>Guru</span></a></h3>
                 </div>
                 <ul className="nav-list">{navPages.map((page, index) => 
@@ -51,7 +51,7 @@ function Header(props){
                     
                     </ul>
                     <div style={{display: "flex", gap: "1rem"}}>
-                        <a href="#hire" className="cta-btn">Hire Me</a>
+                        <a href="#hire" className="cta-btn">Hire Us</a>
                         <button className={`hamburger ${isOpen? "open": ""}`} id="hamburger" onClick={()=> setIsOpen(!isOpen)}>
                         <span></span><span></span><span></span>
                         </button>
