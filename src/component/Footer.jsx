@@ -1,61 +1,52 @@
 function Footer(){
-     const services = ["Project Report",
-                      "Seminars Report",
-                      "IT and Internship Report",
-                      "Defence ppt slides",
-                      "Plagarism check",
-                      "Grammar check"]
+     const links ={ 
+      Services:      [["Project Report", ""],
+                      ["Seminars Report",],
+                      ["IT and Internship Report",],
+                      ["Defence ppt slides",]],
 
-     const info = [{title:"home", label:"Home"},
-                    {title:"about", label:"About Us"},
-                    {title:"services", label:"Services"},
-                    {title:"testimonial", label:"Testimonials"},
-                    {title:"contact", label:"Contact Us"}]
+     Company:           [["Home","#home"],
+                      ["About Us","#about"],
+                      ["Services","#services"],
+                      ["Testimonials","#testimonial"],
+                      ["Portfolio","#portfolio"]],
 
-     const contact = [{title: "Phone: +234 90"}, 
-                        {title: "Email: eloke@gmail.com"}, 
-                        {title: "Work days: Mon - Sat: 8am - 7pm"}, 
-                        {title: "Location: Delta State, Nigeria"}]
-
-     const contactLogo = []
-
+     Contact:        [["+234 904 823 2233"], 
+                      ["elokehumphery@gmail.com"], 
+                      ["Mon - Sat: 8am - 7pm"], 
+                      ["Delta State, Nigeria"]]
+     };
+     const social = [{logo:"✆", value:"https://wa.me/+2349048232233"},
+                      {logo:"ꚠ", value:"https://wa.me/+2349048232233"},
+                      {logo:"☎", value:"tel:+2349048232233"}];
   return(
     <>
-      <footer className="footer">
-        <div className="footer-main">
-           <div className="footer-title">
-            <img src="" alt="" />
-            <h1>Project<span>Guru</span></h1>
-            <p></p>
-            <span>
-
-            </span>
-          </div>     
-
-           <div className="footer-services">
-              <div>
-                <h2>Our services</h2>{services.map((service, index)=> <p key={index}>{service}</p>)}
-              </div>
-          </div>  
-
-           <div className="footer-info">
-              <div>
-                <h2>Company</h2>{info.map((info, index)=> <p key={index}>{info.label}</p>)}
-              </div>
-          </div>     
-
-           <div className="footer-contact">
-              <div>
-               <h2>Contact</h2> {contact.map((details, index)=> <p key={index}>{details.title}</p> )}
-              </div>
-          </div>  
-        </div> 
-           <div className="footer-end">
-            <p>© 2025 ProjectGuru. All rights reserved</p>
-            <p>{" "}</p>
-            <p>{" "}</p>
-          </div>     
-        </footer>
+        <footer>
+      <div className="footer-top">
+        <div className="footer-brand">
+          <a href="#hero" className="nav-logo">Project<span>Guru</span></a>
+          <p>An agency dedicated to delivering quality jobs. Based in Delta, working nationwide.</p>
+        </div>
+        {Object.entries(links).map(([heading, items]) => (
+          <div className="footer-col" key={heading}>
+            <h4>{heading}</h4>
+            <ul style= {{padding: "0"}}>
+              {items.map(([label]) => (
+                <li key={label}><a>{label}</a></li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+      <div className="footer-bottom">
+        <span>© {new Date().getFullYear()} Project Guru. All rights reserved.</span>
+        <div className="social-links">
+          {social.map((s,i) => (
+            <a href={s.value} target="_blank" className="social-link" key={i}>{s.logo}</a>
+          ))}
+        </div>
+      </div>
+    </footer>
     </>
   )
 }

@@ -5,11 +5,13 @@ import HeroSection from '../pages/HeroSection'
 import Contact from '../pages/Contact'
 import Hire from './Hire'
 import Portfolio from './Portfolio'
+import Stats from '../pages/Stats'
 
 function Home(){
     return(
         <div>
             <HeroSection />
+            <Stats />
             <About />
             <Services />
             <Testimonial />

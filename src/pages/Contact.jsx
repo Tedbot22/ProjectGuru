@@ -3,29 +3,29 @@ function Contact(){
     <>
       <div className="contact" id="contact">
            <div className="contact-title">
-            <p>Contact us</p>
+            <p className="cont-p">Contact us</p>
             <h1>Reach out to us</h1>
             <p className="contact-des">Have an idea or a challenge? We'd love to hear from you. Fill in the form and we'll get back to you within 24 hours.</p>
             <div className="contact-detail">
               <div className="contact-row">
-                <div className="contact-ico">📍</div>
+                <div className="contact-ico">⚲</div>
                 <div>
                   <h4>Location</h4>
-                  <p>Lagos, Nigeria (Remote-friendly)</p>
+                  <p>Delta, Nigeria</p>
                 </div>
               </div>
               <div className="contact-row">
-                <div className="contact-ico">📧</div>
+                <div className="contact-ico">✉</div>
                 <div>
                   <h4>Email</h4>
-                  <p>hello@projectguru.ng</p>
+                  <p>elokehumphery@gmail.com</p>
                 </div>
               </div>
               <div className="contact-row">
-                <div className="contact-ico">📞</div>
+                <div className="contact-ico">☎</div>
                 <div>
                   <h4>Phone</h4>
-                  <p>+234 800 123 4567</p>
+                  <p>+234  904 823 2233</p>
                 </div>
             </div>
           </div>
@@ -49,7 +49,7 @@ function Contact(){
           </div>
           <div className="form-group">
             <label>Tell us about your project</label>
-            <textarea placeholder="Describe your project, goals, and timeline..."></textarea>
+            <textarea placeholder="Describe your project, or what you need..."></textarea>
           </div>
           <button className="form-submit">Send Message</button>
         </div>
