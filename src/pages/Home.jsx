@@ -5,19 +5,22 @@ import HeroSection from '../pages/HeroSection'
 import Contact from '../pages/Contact'
 import Hire from './Hire'
 import Portfolio from './Portfolio'
-import Stats from '../pages/Stats'
+import Header from '../component/Header'
+import Footer from '../component/Footer'
+
 
 function Home(){
     return(
         <div>
+            <Header />
             <HeroSection />
-            <Stats />
             <About />
             <Services />
             <Testimonial />
             <Portfolio />
             <Contact />
-            <Hire />   
+            <Hire />
+            <Footer />
         </div>
     )
 }

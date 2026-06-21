@@ -9,7 +9,7 @@ function Hire(){
         </div>
         <div className="hire-btn">
             <a className="hire-whatsapp" href="https://www/wa.me/+23490482322233">Whatsapp</a>
-            <a className="hire-call" href="+2349048232233">Call</a>
+            <a className="hire-call" href="+2349048232233">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Call&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
         </div>
       </div>
         </div>

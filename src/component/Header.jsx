@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Logo from '../assets/pfp.jpg'
 
-function Header(props){
+function Header(){
     
     const navPages =[{title:"home", label:"Home"},
                     {title:"about", label:"About Us"},
