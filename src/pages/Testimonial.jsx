@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react"
+
 function Testimonial(){
 
   const usersReview = [{id:1,name:"John Doe", rating: 4, review: "This is my reviewThis is my reviewThis is my reviewThis is my reviewThis is my reviewThis is my reviewThis is my reviewThis is my review", departmet: "Nursing", institution: "Delsu", year: "2025", logoColor:"#2dbc53"},
@@ -11,16 +13,28 @@ function Testimonial(){
 
       }
     }
+    const [showAll, setShowAll] = useState(false)
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 768)
+
+    useEffect(() =>{
+      const handlearesize = () => {
+        setIsMobile(window.innerWidth < 768)
+      }
+      window.addEventListener('resize', handlearesize)
+      return () => window.removeEventListener('resize', handlearesize)
+    },[])
+
+    const visibleReviews = !isMobile || showAll ? usersReview : usersReview.slice(0,2)
   return(
     <>
     <div id="testimonial" className="testimonial">
         <div className="testi-title">
-            <h1>Testimonials</h1>
-            <p>Reviews we got from our clients</p>
+            <h1 className="reveal delay-1">Testimonials</h1>
+            <p className="reveal delay-2">Reviews we got from our clients</p>
         </div>
 
-        <div className="client-reviews reveal delay-1">
-          {usersReview.map((review)=> 
+        <div className="client-reviews">
+          {visibleReviews.map((review)=> 
           <div key={review.id} className="review-card">
             
             <div className="review-rating">
@@ -46,6 +60,10 @@ function Testimonial(){
             </div>
           </div> )}    
       </div> 
+          <div className="show-div" style={{margin: "5px"}}>
+            <span className="show-btn" onClick={() => setShowAll(!showAll)}>{showAll ? "Show Less" : "Show More"}</span>
+          </div>
+
     </div>
     </>
   )
