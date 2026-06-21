@@ -1,4 +1,3 @@
-import Image from '../assets/hero2.png'
 import { useCarousel } from '../useCarousel';
 import doc1 from '../assets/Documents/Doc1.pdf'
 import doc2 from '../assets/Documents/Doc2.pdf'
