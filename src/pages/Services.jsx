@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react"
 function Services(){
-  const ourServices = [{id:"1", icon:"📑", service: "Project Report", description: "This decription placeholder"},
-                        {id:"2", icon:"📝", service: "Seminars Report", description: "This decription placeholder"},
-                        {id:"3", icon:"📊", service: "IT and Internship Report", description: "This decription placeholder"},
-                        {id:"4", icon:"🗒️", service: "Defence ppt slides", description: "This decription placeholder"},
-                        {id:"5", icon:"📄", service: "Plagarism check", description: "This decription placeholder"},
-                        {id:"6", icon:"🔖", service: "Grammar check", description: "This decription placeholder"},
+  const ourServices = [{id:"1", icon:"📑", service: "Project Report", description: "Well researched and professionally written reports."},
+                        {id:"2", icon:"📝", service: "Seminars Report", description: "Clear, structured seminar reports with proper formating."},
+                        {id:"3", icon:"📊", service: "IT and Internship Report", description: "Detailed and technical IT reports."},
+                        {id:"4", icon:"🗒️", service: "Defence ppt slides", description: "Clean engaging presentation slides."},
+                        {id:"5", icon:"📄", service: "Plagarism check", description: "Thorough plagarism screening to ensure originality."},
+                        {id:"6", icon:"🔖", service: "Grammar check", description: "Proofreading to remove grammar, spelling, punctuation errors."},
   ]
 
     const [showAll, setshowAll] = useState(false)
@@ -45,7 +45,7 @@ function Services(){
             {visibleServices.map((service) =>   
             <div className="service-card" key={service.id}>
               <span className="service-icon">{service.icon}</span>
-              <h2 className="service-name">{service.service}</h2>
+              <h2 className="servicename">{service.service}</h2>
               <p className="service-description">{service.description}</p>
             </div>
           )} 

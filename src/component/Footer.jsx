@@ -16,8 +16,8 @@ function Footer(){
                       ["Mon - Sat: 8am - 7pm"], 
                       ["Delta State, Nigeria"]]
      };
-     const social = [{logo:"✆", value:"https://wa.me/+2349048232233"},
-                      {logo:"ꚠ", value:"https://wa.me/+2349048232233"},
+     const social = [{logo:"✆", value:"https://wa.me/+2349079010699"},
+                      {logo:"ꚠ", value:"https://vm.tiktok.com/ZS96eAAmAdWWN-d2wzS/"},
                       {logo:"☎", value:"tel:+2349048232233"}];
   return(
     <>

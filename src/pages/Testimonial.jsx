@@ -2,11 +2,11 @@ import { useEffect, useState } from "react"
 
 function Testimonial(){
 
-  const usersReview = [{id:1,name:"John Doe", rating: 4, review: "This is my reviewThis is my reviewThis is my reviewThis is my reviewThis is my reviewThis is my reviewThis is my reviewThis is my review", departmet: "Nursing", institution: "Delsu", year: "2025", logoColor:"#2dbc53"},
-                    {id:2,name:"Ade Bisi", rating: 5, review: "This is my reviewThis is my reviewThis is my reviewThis is my reviewThis is my reviewThis is my reviewThis is my reviewThis is my review", departmet: "Pharmacy", institution: "Delsu", year: "2026", logoColor:"#972be9"},
-                    {id:3,name:"Bola Chloe", rating: 5, review: "This is my reviewThis is my reviewThis is my reviewThis is my reviewThis is my reviewThis is my reviewThis is my reviewThis is my review", departmet: "Pharmacy", institution: "Delsu", year: "2026", logoColor:"#d14222"},
-                    {id:4,name:"CLara Missi", rating: 3, review: "This is my reviewThis is my reviewThis is my reviewThis is my reviewThis is my reviewThis is my reviewThis is my reviewThis is my review", departmet: "Accounting", institution: "Unilag", year: "2025", logoColor:"#11238a"},
-                    {id:5,name:"Pemu Joshua", rating: 4, review: "This is my reviewThis is my reviewThis is my reviewThis is my reviewThis is my reviewThis is my reviewThis is my reviewThis is my review", departmet: "Anatomy", institution: "Delsu", year: "2026", logoColor:"#2065cc"}]
+  const usersReview = [{id:1,name:"Belema Austine", rating: 4, review: "You did a great job man!, the flow, the references, everything just made sense, my supervisor really commended the report, the quality was just perfect, thanks alot man.", departmet: "Pharmacy", institution: "Delsu", year: "2025", logoColor:"#2dbc53"},
+                    {id:2,name:"Nwanfor Franklin", rating: 5, review: "Omo, i went through everything and i'm honestly impressed. you really understood the assignment better than i expected. Thank you so much. i'll definitely come back when ever i have another job.", departmet: "Pharmacy", institution: "Delsu", year: "2026", logoColor:"#972be9"},
+                    {id:3,name:"David Esther", rating: 5, review: "just wanted to let you know i got my result today. I passed! Thank you for putting in the effort because i know this wasn't an easy topic. You delivered exactly what i needed, Thank you so much.", departmet: "Nursing", institution: "Delsu", year: "2026", logoColor:"#d14222"},
+                    {id:4,name:"James Believe", rating: 3, review: "I can't even lie, i was expecting to make plenty corrections, but i barely changed anything. The quality waas really good, my supervisor really liked the work.", departmet: "Accounting", institution: "Unilag", year: "2025", logoColor:"#11238a"},
+                    {id:5,name:"Onyebuchi Judith", rating: 4, review: "Just wanted to say a huge thank you. the feedback from the lecturer was really positive and i'm gunuiely happy with the outcome", departmet: "Anatomy", institution: "Delsu", year: "2026", logoColor:"#2065cc"}]
 
     function handleRating(lenght){
       for(let i=0; i < length; i++){

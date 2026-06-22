@@ -12,7 +12,7 @@ function About(){
             Our mission is to deliver high-quality and well researched content that meets academic standards while helping our clients reach academic goals. We are committed to excellence, confidentiality, and timely deilivery in every project we undertake.
             <br /><br />
             
-            Weather you need assitance with reasearch papers, project writing, semminar reports, IT reports, editing, plagarism checks, proof reading, assignments we are committed to providing reliable academic support through our works.
+            Weather you need assitance with reasearch papers, project writing, semminar reports, IT reports, editing, plagarism checks, proof reading, assignments, we are committed to providing reliable academic support through our works.
             </p>
         </div>     
       </div>

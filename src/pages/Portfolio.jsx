@@ -20,14 +20,14 @@ import thumb8 from '../assets/Documents/thumbs/Doc8.png'
 
 function Portfolio(){
 
-    const projects = [{title: "Project Report", description: "Faith | Southern Delta University.", bg: thumb1, fileLink: doc1}, 
-                     {title: "Project Report", description: "Gloria | Southern Delta University.", bg: thumb2, fileLink: doc2},
-                     {title: "Project Report", description: "Favour | Southern Delta University.", bg: thumb3, fileLink: doc3},
-                     {title: "Seminar Report", description: "Emmanuella | Delsu.", bg: thumb4, fileLink: doc4},
-                     {title: "Seminar Report", description: "Princess | Unical", bg: thumb5, fileLink: doc5},
-                     {title: "IT Report", description: "Preference | SDU", bg: thumb6, fileLink: doc6},
-                     {title: "IT Report", description: "Nathan | Delsu", bg: thumb7, fileLink: doc7},
-                     {title: "IT Report", description: "Daniel | Unical", bg: thumb8, fileLink: doc8},
+    const projects = [{title: "Project Report", description: "Glory | DELSU", bg: thumb1, fileLink: doc1}, 
+                     {title: "Project Report", description: "Chioma | UNICAL", bg: thumb2, fileLink: doc2},
+                     {title: "Project Report", description: "Christiana | UNIPORT", bg: thumb3, fileLink: doc3},
+                     {title: "Seminar Report", description: "Miracle | DELSU.", bg: thumb4, fileLink: doc4},
+                     {title: "Seminar Report", description: "Ebenezer | UNICAL", bg: thumb5, fileLink: doc5},
+                     {title: "IT Report", description: "Odirah | UNILAG", bg: thumb6, fileLink: doc6},
+                     {title: "IT Report", description: "Austine | DELSU", bg: thumb7, fileLink: doc7},
+                     {title: "IT Report", description: "Jodhua | SDU", bg: thumb8, fileLink: doc8},
     ]
 
     const { viewportRef, index, cardWidth, offset, prev, next, goTo, maxIndex } =
