@@ -104,9 +104,3 @@ function Contact() {
 }
 
 export default Contact
-
-{/**
-  
-   style={sent ? {background: "#059669", border: "1px solid #ffffff", color: "#ffffff"} : {}}
-   
-   */}

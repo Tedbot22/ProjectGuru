@@ -605,7 +605,6 @@ a {
 .carousel-viewport {
   overflow: hidden;
   border-radius: 12px;
-  padding: 12px;
 }
 
 .carousel-track {
@@ -626,8 +625,8 @@ a {
 }
 
 .portfolio-card:hover {
-  box-shadow: 0 16px 48px var(--secondary-2);
-  transform: translateY(-8px);
+  box-shadow: 0 10px 10px #80a4ff13;
+  transform: translateY(-5px);
 }
 
 .portfolio-thumb {
@@ -956,11 +955,7 @@ a {
   gap: 0.5rem;
 }
 
-.form-submit:hover {
-  background: var(--secondary);
-  color: var(--primary);
-  transform: translateY(-1px);
-}
+
 
 @media (max-width: 768px) {
   .contact {
