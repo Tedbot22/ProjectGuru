@@ -24,19 +24,21 @@ function Testimonial() {
     }
     window.addEventListener('resize', handlearesize)
     return () => window.removeEventListener('resize', handlearesize)
-  }, [])
+  }, []);
 
-  useEffect(() => {
-    if (!showAll) {
+  const visibleReviews = !isMobile || showAll ? usersReview : usersReview.slice(0, 2)
+
+  const handleShow = () => {
+    setShowAll(!showAll)
+    if (showAll === true ) {
       requestAnimationFrame(() => {
         listRef.current?.scrollIntoView({
-          behaviour: "smooth"
+          behaviour: "smooth",
+          block: "start"
         })
       })
     };
-  }, [showAll])
-
-  const visibleReviews = !isMobile || showAll ? usersReview : usersReview.slice(0, 2)
+  }
   return (
     <>
       <div id="testimonial" className="testimonial">
@@ -73,7 +75,7 @@ function Testimonial() {
             </div>)}
         </div>
         <div className="show-div" style={{ margin: "5px" }}>
-          <span className="show-btn" onClick={() => setShowAll(!showAll)}>{showAll ? "Show Less" : "Show More"}</span>
+          <span className="show-btn" onClick={handleShow}>{showAll ? "Show Less" : "Show More"}</span>
         </div>
 
       </div>

@@ -3,10 +3,10 @@ import Reveal from './Reveal'
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'
 
-function App() {
+function App(){
   Reveal();
-
-  return (
+  
+  return(
     <div>
       <Home />
       <ToastContainer />

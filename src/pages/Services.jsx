@@ -16,6 +16,16 @@ function Services() {
 
   function showHandler(e) {
     setshowAll(!showAll)
+    
+    if (showAll === true ) {
+      requestAnimationFrame(() => {
+        listRef.current?.scrollIntoView({
+          behaviour: "smooth",
+          block: "start"
+        });
+      });
+    };
+
   }
 
 
@@ -32,14 +42,6 @@ function Services() {
   const visibleServices = !isMobile || showAll ? ourServices : ourServices.slice(0, 2)
 
   useEffect(() => {
-    if (!showAll) {
-      requestAnimationFrame(() => {
-        listRef.current?.scrollIntoView({
-          behaviour: "smooth"
-        })
-      })
-    };
-
     const cards = document.querySelectorAll('.service-card.reveal')
     cards.forEach(card => {
       if (card.getBoundingClientRect().top < window.innerHeight) {

@@ -9,8 +9,8 @@ import Header from '../component/Header'
 import Footer from '../component/Footer'
 
 
-function Home() {
-    return (
+function Home(){
+    return(
         <div>
             <Header />
             <HeroSection />

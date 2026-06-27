@@ -21,6 +21,7 @@
 html {
   scroll-behavior: smooth;
   font-family: 'Plus Jakarta Sans', sans-serif;
+  scroll-padding-block-start: 60px;
 }
 
 body {
@@ -231,7 +232,9 @@ a {
     display: none;
   }
 }
-
+.section{
+  scroll-margin-top: 68px;
+}
 /*   SECTION WRAP   */
 .section-wrap {
   max-width: 1200px;
@@ -268,12 +271,10 @@ a {
     padding: 3rem 1.25rem;
   }
 }
-
 /*    HERO    */
 .hero-bg {
   background-size: cover;
   background-position: center;
-  padding-top: 28px;
 }
 
 .hero {
