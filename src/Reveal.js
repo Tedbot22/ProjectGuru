@@ -1,9 +1,9 @@
-import { useEffect} from "react";
+import { useEffect } from "react";
 
-export default function Reveal(){
-  useEffect(()=> {
+export default function Reveal() {
+  useEffect(() => {
 
-    const hamburger  = document.getElementById('hamburger');
+    const hamburger = document.getElementById('hamburger');
 
     const revealElements = document.querySelectorAll('.reveal');
 
@@ -22,7 +22,7 @@ export default function Reveal(){
 
     revealElements.forEach(el => revealObserver.observe(el));
 
-    return()=> revealObserver.disconnect();
+    return () => revealObserver.disconnect();
   }, []);
 
 }

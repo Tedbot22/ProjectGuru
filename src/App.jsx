@@ -1,11 +1,15 @@
 import Home from './pages/Home'
 import Reveal from './Reveal'
-function App(){
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css'
+
+function App() {
   Reveal();
-  
-  return(
+
+  return (
     <div>
       <Home />
+      <ToastContainer />
     </div>
   )
 }
