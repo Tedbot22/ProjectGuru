@@ -1,7 +1,7 @@
 function Footer() {
   const links = {
-    Services: [["Project Report", ""],
-    ["Seminars Report",],
+    Services: [["Project", ""],
+    ["Seminar",],
     ["IT and Internship Report",],
     ["Defence ppt slides",]],
 

@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from "react"
 
 function Services() {
-  const ourServices = [{ id: "1", icon: "📑", service: "Project Report", description: "Well researched and professionally written reports." },
-  { id: "2", icon: "📝", service: "Seminars Report", description: "Clear, structured seminar reports with proper formating." },
+  const ourServices = [{ id: "1", icon: "📑", service: "Project", description: "Well researched and professionally written reports." },
+  { id: "2", icon: "📝", service: "Seminar", description: "Clear, structured seminar reports with proper formating." },
   { id: "3", icon: "📊", service: "IT and Internship Report", description: "Detailed and technical IT reports." },
   { id: "4", icon: "🗒️", service: "Defence ppt slides", description: "Clean engaging presentation slides." },
   { id: "5", icon: "📄", service: "Plagarism check", description: "Thorough plagarism screening to ensure originality." },
