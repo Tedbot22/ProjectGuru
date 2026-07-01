@@ -41,13 +41,13 @@ function Testimonial() {
   }
   return (
     <>
-      <div id="testimonial" className="testimonial">
+      <div id="testimonial" className="testimonial" ref={listRef}>
         <div className="testi-title">
           <h1 className="reveal delay-1">Testimonials</h1>
           <p className="reveal delay-2">Reviews we got from our clients</p>
         </div>
 
-        <div className="client-reviews" ref={listRef}>
+        <div className="client-reviews">
           {visibleReviews.map((review) =>
             <div key={review.id} className="review-card">
 

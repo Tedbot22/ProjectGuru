@@ -52,14 +52,14 @@ function Services() {
   }, [showAll])
   return (
     <>
-      <div className="services" id="services">
+      <div className="services" id="services" ref={listRef}>
         <div className="service-title">
           <h1 className="reveal delay-1">Our services</h1>
           <p className="reveal delay-2">Every service is uniquely tailored to our clients needs</p>
         </div>
 
-        <div className="service-main" ref={listRef} >
-          {visibleServices.map((service) =>
+        <div className="service-main" >
+          {visibleServices.map((service, index) =>
             <div className="service-card" key={service.id}>
               <span className="service-icon">{service.icon}</span>
               <h2 className="servicename">{service.service}</h2>
