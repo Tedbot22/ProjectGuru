@@ -14,7 +14,7 @@ function Footer() {
     Contact: [["+234 904 823 2233"],
     ["elokehumphery@gmail.com"],
     ["Mon - Sat: 8am - 7pm"],
-    ["Delta State, Nigeria"]]
+    ["Delta State, Nigeria"]],
   };
   const social = [{ logo: "✆", value: "https://wa.me/+2349079010699" },
   { logo: "ꚠ", value: "https://vm.tiktok.com/ZS96eAAmAdWWN-d2wzS/" },
@@ -39,7 +39,7 @@ function Footer() {
           ))}
         </div>
         <div className="footer-bottom">
-          <span className="footter-rights">© {new Date().getFullYear()} Project Guru. All rights reserved.</span>
+          <span className="footter-rights">© {new Date().getFullYear()} Project Guru. All rights reserved. | <a style={{textDecoration: "none", color: "#6B7280"}} href="../Privacypolicy.html">Privacy Policy</a> |</span>
           <div className="social-links">
             {social.map((s, i) => (
               <a href={s.value} target="_blank" className="social-link" key={i}>{s.logo}</a>
