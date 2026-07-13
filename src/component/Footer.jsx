@@ -39,7 +39,7 @@ function Footer() {
           ))}
         </div>
         <div className="footer-bottom">
-          <span className="footter-rights">© {new Date().getFullYear()} Project Guru. All rights reserved. | <a style={{textDecoration: "none", color: "#6B7280"}} href="../Privacypolicy.html">Privacy Policy</a> |</span>
+          <span className="footter-rights">© {new Date().getFullYear()} Project Guru. All rights reserved. | <a style={{textDecoration: "none", color: "#6B7280"}} href="../privacypolicy.html">Privacy Policy</a> |</span>
           <div className="social-links">
             {social.map((s, i) => (
               <a href={s.value} target="_blank" className="social-link" key={i}>{s.logo}</a>
